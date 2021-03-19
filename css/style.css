@@ -1,5 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
 .font-div{
     width: 30%;
+    background-color: #212529;
+}
+
+body{
+    background: #212529 !important;
+   
 }
 .profile_image{
     width:80%;
@@ -10,29 +20,35 @@
     border:5px solid #ffc107;
     
 }
-.home:hover{
-     background-color: #6c757d !important;
+.home{
+     background-color: #adaeaf !important;
      cursor: pointer;
 }
-.resume:hover{
+.resume{
     background-color: #6c757d !important;
     cursor: pointer;
 }
 
-.work:hover{
-    background-color: #fff !important;
-    color:black !important;
+.work{
+    background-color: #f3aa4e !important;
+    color:#fff !important;
     cursor: pointer;
 }
 
-.contact:hover{
-    background-color: #fff !important;
-    color:black !important;
+.contact{
+    background-color: #e94c3d !important;
+    color:#fff !important;
     cursor: pointer;
 }
 
 footer{
     background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    margin-bottom:-3rem !important;
 }
 
 /* Responsive */

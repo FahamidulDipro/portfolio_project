@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -38,18 +39,18 @@
                         Fullstack Web Developer
                     </div>
                     <div class="d-flex flex-row text-center text-white justify-content-around bg-dark">
-                        <div class="p-4 bg-dark font-div home">
+                        <div class="p-4  font-div home">
                             <i class="fas fa-home fa-2x d-block"></i> Home
                         </div>
-                        <div class="p-4 bg-dark font-div resume">
+                        <div class="p-4 font-div resume">
                             <i class="fas fa-graduation-cap fa-2x d-block" data-bs-toggle="collapse"
                                 data-bs-target="#resume"></i> Resume
                         </div>
-                        <div class="p-4 bg-dark font-div work">
+                        <div class="p-4  font-div work">
                             <i class="fas fa-folder fa-2x d-block" data-bs-toggle="collapse" data-bs-target="#work"></i>
                             Work
                         </div>
-                        <div class="p-4 bg-dark font-div contact">
+                        <div class="p-4  font-div contact ">
                             <i class="fas fa-envelope fa-2x d-block" data-bs-toggle="collapse"
                                 data-bs-target="#contact"></i> Contact
                         </div>
@@ -79,10 +80,14 @@
                 <li>PHP</li>
                 <li>LARAVEL</li>
             </ul>
+            <div class=" text-light text-center p-3">
+                <button class="btn btn-outline-dark"><i class="fas fa-file-download"></i> Download</button>
+            </div>
         </div>
+      
     </div>
     <div class="collapse" id="work">
-        <div class="p-5 text-dark">
+        <div class="p-5 text-dark" style="background-color: #f3aa4e;">
             <h2>Projects I have worked on</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi dicta.</p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -144,10 +149,10 @@
 
     </div>
     <div class="collapse" id="contact">
-        <div class="p-5">
+        <div class="p-5" style="background-color: #e94c3d;">
             <h2>Contact Me</h2>
-            <div class="card card-body">
-                <div class="row justify-content-center">
+            <div class="card card-body" style="background-color: #e94c3d;">
+                <div class="row justify-content-center mt-3">
                     <div class="col-lg-8 col-md-8 col-12">
                         <div class="input-group mb-3">
                             <span class="input-group-text bg-warning text-dark p-3" id="basic-addon1"><i
@@ -173,16 +178,20 @@
     </div>
 
     <footer>
-        <div class="p-5 mb-5 text-center">
-            <button class="btn btn-outline-light"><i class="fas fa-file-download"></i> Download</button>
+        <div class="text-center text-secondary">
+            <p>&#169; FID Company. All Rights Reserved</p>
         </div>
     </footer>
     <script>
-      $('.font-div').click(function(){
-        $('.collapse').collapse('hide');
-      });
+
+        $(document).ready(function () {
+            $('.font-div').click(function () {
+                $('.collapse').collapse('hide');
+            });
+        });
+
     </script>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
